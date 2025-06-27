@@ -8,12 +8,12 @@ import { Subscription } from "rxjs";
 })
 export class UserProfileComponent implements OnInit {
   userData: any;
-  userSub: Subscription; // Declared but never unsubscribed
+  userSub1: Subscription; // Declared but never unsubscribed
 
   constructor(private dataService: DataService) {}
 
   ngOnInit() {
-    this.userSub = this.dataService.getUserData().subscribe((data) => {
+    this.userSub1 = this.dataService.getUserData().subscribe((data) => {
       this.userData = data;
     });
   }
