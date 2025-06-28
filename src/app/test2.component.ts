@@ -15,7 +15,8 @@ import { Subscription } from 'rxjs';
 @Injectable()
 export class BadUserService {
   getUsers() { return []; }
-}
+@Injectable({ providedIn: 'root' })
+export class BadUserService { ... }
 
 
 // VIOLATION of Rule #1: "OnPush Change Detection"
