@@ -35,7 +35,14 @@ export class BadComponent {
 }
 ```html
 <!-- ============================================================================ -->
-<!-- File: bad-component.component.html                                       -->
+<div *ngFor="let item of items; trackBy: trackById">
+  <span>{{ item.id }}</span> - <span>{{ item.name }}</span>
+</div>
+
+//in component class
+trackById(index: number, item: any): number {
+  return item.id;
+}
 <!-- Description: This file contains a violation of the ngFor performance rule. -->
 <!-- ============================================================================ -->
 
