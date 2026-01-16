@@ -9,7 +9,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 })
 export class GreetingComponent implements OnInit {
   // Properties (data) that can be displayed or manipulated
-  title: string = "Welcome to Mycwdqw Angular 1 wqq sawq   wqqd";
+  title: string = "Welcome to Mycwdqw Angular 1 wqq sawq";
   userName: string = "Guest";
   initialUserName: string = "Guest"; // To store the initial state for reset
   showDetails: boolean = false;
