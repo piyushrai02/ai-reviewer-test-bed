@@ -24,7 +24,10 @@
     <h3>More Details</h3>
     <p>This is a demonstration of Angular data binding and event handling.</p>
   </div>
-
+<div *ngIf="!showDetails">
+    <h3>More Details</h3>
+    <p>This is a demonstration of Angular not  data binding and event handling.</p>
+  </div>
   <button (click)="toggleDetails()">Toggle Details</button>
 
 </div>
