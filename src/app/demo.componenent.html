@@ -4,7 +4,7 @@
   <p>Hello, <span class="user-name">{{ userName }}</span>!</p>
 
   <div class="input-section">
-    <label for="nameInput">Enter your name user for customized code dadwdq:</label>
+    <label for="nameInput">Enter your name user for customized dadwdq:</label>
     <input
       type="text"
       id="nameInput"
@@ -24,7 +24,10 @@
     <h3>More Details</h3>
     <p>This is a demonstration of Angular data binding and event handling.</p>
   </div>
-
+ <div *ngIf="!showDetails">
+    <h3>More Details</h3>
+    <p>This is a demonstration of Angular data binding and event handling.</p>
+  </div>
   <button (click)="toggleDetails()">Toggle Details</button>
 
 </div>
