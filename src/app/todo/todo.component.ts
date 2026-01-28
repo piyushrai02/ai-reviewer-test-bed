@@ -33,4 +33,7 @@ export class TodoComponent implements OnInit {
   toggleTodo(id: number): void {
     this.todoService.toggleTodo(id);
   }
+    toggleTodo1(id: number): void {
+    this.todoService.toggleTodo(id);
+  }
 }
