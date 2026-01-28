@@ -23,7 +23,13 @@ export class GreetingComponent implements OnInit {
       this.initialUserName = name;
     }
   }
-
+  @Input()
+  set defaultName(name: string) {
+    if (name) {
+      this.userName = name;
+      this.initialUserName = name;
+    }
+  }
   // @Output() Decorator: Allows this component to emit events to its parent
   @Output() nameChanged = new EventEmitter<string>();
   @Output() detailsToggled = new EventEmitter<boolean>();
