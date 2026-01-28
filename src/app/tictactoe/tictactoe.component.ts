@@ -18,6 +18,10 @@ export class TicTacToeComponent implements OnInit {
     this.resetGame();
   }
 
+  ngOnInit(): void {
+    this.resetGame();
+  }
+
   resetGame(): void {
     this.board = Array(9).fill('');
     this.currentPlayer = 'X';
