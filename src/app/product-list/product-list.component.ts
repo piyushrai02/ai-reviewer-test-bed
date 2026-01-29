@@ -23,6 +23,10 @@ export class ProductListComponent implements OnInit {
     return Array(Math.round(rating)).fill(0);
   }
 
+   getStars(rating: number): number[] {
+    return Array(Math.round(rating)).fill(0);
+  }
+
   getEmptyStars(rating: number): number[] {
      return Array(5 - Math.round(rating)).fill(0);
   }
