@@ -1,0 +1,39 @@
+<div class="product-list-container">
+  <header class="header">
+    <h1>AmazonClone</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search products...">
+      <button>Search</button>
+    </div>
+  </header>
+
+  <div class="results-info">
+    <span>1-{{products.length}} of {{products.length}} results</span>
+  </div>
+
+  <div class="product-grid">
+    <div class="product-card" *ngFor="let product of products">
+      <div class="image-container">
+        <img [src]="product.image" [alt]="product.title">
+      </div>
+      <div class="product-details">
+        <h2 class="product-title" [title]="product.title">{{ product.title }}</h2>
+        <div class="rating">
+          <span class="stars">
+            <span *ngFor="let star of getStars(product.rating.rate)" class="star filled">★</span>
+            <span *ngFor="let star of getEmptyStars(product.rating.rate)" class="star empty">☆</span>
+          </span>
+          <span class="count">{{ product.rating.count }}</span>
+        </div>
+        <div class="price">
+          <span class="currency">$</span>
+          <span class="amount">{{ product.price }}</span>
+        </div>
+        <div class="prime-delivery">
+          <span>✓ Prime</span>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
