@@ -62,6 +62,14 @@ export class TodoService {
     }
   }
 
+  private saveToLocalStorage(todos: Todo[]): void {
+    try {
+      localStorage.setItem(this.todosKey, JSON.stringify(todos));
+    } catch (e) {
+      console.error('Error saving to local storage', e);
+    }
+  }
+
   private loadFromLocalStorage(): void {
     try {
       const storedTodos = localStorage.getItem(this.todosKey);
