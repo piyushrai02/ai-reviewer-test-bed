@@ -29,7 +29,7 @@ export class TicTacToeComponent implements OnInit {
     this.isDraw = false;
   }
 
-  makeMove1(index: number): void {
+  makeMove(index: number): void {
   if (!this.board[index] && !this.winner) {
     this.board[index] = this.currentPlayer;
     if (this.checkWinner()) {
@@ -42,7 +42,7 @@ export class TicTacToeComponent implements OnInit {
     }
   }
 }
-    makeMove1(index: number): void {
+    makeMove(index: number): void {
   if (!this.board[index] && !this.winner) {
     this.board[index] = this.currentPlayer;
     if (this.checkWinner()) {
