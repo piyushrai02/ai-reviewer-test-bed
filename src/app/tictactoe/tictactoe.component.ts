@@ -29,20 +29,6 @@ export class TicTacToeComponent implements OnInit {
     this.isDraw = false;
   }
 
-  makeMove1(index: number): void {
-    if (!this.board[index] && !this.winner) {
-      this.board[index] = this.currentPlayer;
-      if (this.checkWinner()) {
-        this.winner = this.currentPlayer;
-        this.scores[this.currentPlayer]++;
-      } else if (this.board.every(cell => cell !== '')) {
-        this.isDraw = true;
-      } else {
-        this.currentPlayer = this.currentPlayer === 'X' ? 'O' : 'X';
-      }
-    }
-  }
-
   makeMove(index: number): void {
   if (!this.board[index] && !this.winner) {
     this.board[index] = this.currentPlayer;
