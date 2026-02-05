@@ -16,7 +16,7 @@ export class GreetingComponent implements OnInit {
   showDetails: boolean = false;
 
   // @Input() Decorator: Allows data to be passed into this component from its parent check the PR
-  @Input()
+  @()
   set defaultName(name: string) {
     if (name) {
       this.userName = name;
