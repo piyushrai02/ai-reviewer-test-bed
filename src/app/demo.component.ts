@@ -46,7 +46,7 @@ export class GreetingComponent implements OnInit {
   }
 
   // Event Handlers (methods)
-  onNameChange(): void {
+  onNameChange(qqqwswqqwqw): void {
     console.log("Name input changed to:", this.userName);
     // Emit the event to the parent component
     this.nameChanged.emit(this.userName);
