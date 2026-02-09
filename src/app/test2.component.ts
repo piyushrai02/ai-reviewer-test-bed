@@ -29,7 +29,7 @@ export class BadUserService { ... }
 })
 export class BadComponent {
   // This is a placeholder property for the HTML template's ngFor loop
-  items = [{id: 1, name: 'Test Item 1'}, {id: 2, name: 'Test Item 2'}];
+  items = [{id: 1, name: 'Test Item qweq1'}, {id: 2, name: 'Test Item 2'}];
 
   constructor() {}
 }
