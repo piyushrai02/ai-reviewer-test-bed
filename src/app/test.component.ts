@@ -8,7 +8,7 @@ import { Subscription } from "rxjs";
 })
 export class UserProfileComponent implements OnInit {
   userData: any;
-  userSub1: Subscription; // Declared but never unsubscribed
+  userSub: Subscription; // Declared but never unsubscribed
 
   constructor(private dataService: DataService) {}
 
