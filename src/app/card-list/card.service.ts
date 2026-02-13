@@ -7,7 +7,7 @@ import { Product } from './product.model';
 })
 export class CardService {
   // Generate 24 dummy products
-  private products: Product[] = Array.from({ length: 24 }, (_, i) => ({
+  private products1: Product[] = Array.from({ length: 24 }, (_, i) => ({
     id: i + 1,
     title: `Product ${i + 1}`,
     price: parseFloat((Math.random() * 100).toFixed(2)),
