@@ -52,7 +52,7 @@ export class GreetingComponent implements OnInit {
     this.nameChanged.emit(this.userName);
   }
 
-  resetName(): void {
+  resetName(): void 
     this.userName = this.initialUserName;
     this.nameChanged.emit(this.userName); // Emit after resetting
   }
