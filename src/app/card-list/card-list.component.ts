@@ -20,7 +20,7 @@ export class CardListComponent implements OnInit {
   constructor(private cardService: CardService) { }
 
   ngOnInit(): void {
-    this.cardService.getProducts().subscribe(data => {
+    this.cardService.getProducts().subscribe(data:any => {
       this.products = data;
       this.totalPages = Math.ceil(this.products.length / this.pageSize);
       this.pages = Array.from({ length: this.totalPages }, (_, i) => i + 1);
