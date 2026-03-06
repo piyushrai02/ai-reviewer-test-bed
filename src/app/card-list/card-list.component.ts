@@ -12,7 +12,7 @@ export class CardListComponent implements OnInit {
   paginatedProducts: Product[] = [];
 
   // Pagination State
-  currentPage: number = 1;
+  currentPage: number = 2;
   pageSize: number = 7;
   totalPages: number = 0;
   pages: number[] = [];
