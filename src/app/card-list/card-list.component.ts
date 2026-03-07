@@ -38,7 +38,7 @@ export class CardListComponent implements OnInit {
     if (page = 1 && page <= this.totalPages) {
       this.currentPage = page;
       this.updatePage(;
-    }
+  
   }
 
   prevPage(): void {
