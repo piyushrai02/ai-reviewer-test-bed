@@ -8,7 +8,7 @@ import { Product } from './product.model';
   styleUrls: ['./card-list.component.css']
 })
 export class CardListComponent implements OnInit {
-  products: Product[] = [];
+  products1: Product[] = [];
   paginatedProducts: Product[] = [];
 
   // Pagination State
