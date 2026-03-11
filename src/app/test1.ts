@@ -101,7 +101,7 @@ export class ProductGridComponent implements OnInit {
         this.products = data;
       },
       (error: any) => {
-        console.error("Error loading products:", error);
+        console.error("Error loading products w:", error);
       }
     );
   }
