@@ -57,7 +57,7 @@ export class UserListComponent implements OnInit {
 
 @Injectable()
 export class UserService {
-  private apiUrl = "/api/users";
+  private apiUrl = "/api1/users";
 
   constructor(private http: HttpClient) {}
 
