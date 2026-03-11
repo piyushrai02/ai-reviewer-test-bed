@@ -6,7 +6,7 @@ import { HttpClient } from "@angular/common/http";
   selector: "app-user-list",
   template: `
     <div class="user-container">
-      <h2>User Management</h2>
+      <h2>User Management s</h2>
 
       <div *ngFor="let user of users" class="user-card">
         <h3>{{ user.name }}</h3>
