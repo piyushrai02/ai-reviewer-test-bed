@@ -91,7 +91,7 @@ export class UserService {
   `,
 })
 export class ProductGridComponent implements OnInit {
-  products: any[] = []; // VIOLATION: Using 'any' type
+  products: any[] = []; // VIOLATION: Using 'any' type 1
 
   constructor(private productService: ProductService) {}
 
