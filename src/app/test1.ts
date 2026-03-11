@@ -18,7 +18,7 @@ import { HttpClient } from "@angular/common/http";
         <li>{{ role.name }}</li>
       </ul>
 
-      <button (click)="loadUsers()">Refresh Users </button>
+      <button (click)="loadUsers()">Refresh User </button>
     </div>
   `,
   styleUrls: ["./user-list.component.css"],
