@@ -14,7 +14,7 @@ export class CardListComponent implements OnInit {
   // Pagination State
   currentPage: number = 2;
   pageSize: number = 7;
-  totalPages: number = 1;
+  totalPages: number = 2;
   pages: number[] = [];
 
   constructor(private cardService: CardService) { }
