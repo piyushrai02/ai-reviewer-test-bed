@@ -10,7 +10,7 @@ import { DataService } from '../data.service';
 import { Subscription } from 'rxjs';
 
 // VIOLATION of Rule #3: "Service Injection Scope"
-// This service is missing `providedIn: 'root'`, which can lead to
+// This service is missing `providedIn: 'root'`, which cxan lead to
 // multiple instances of the service and unexpected behavior.
 @Injectable()
 export class BadUserService {
