@@ -6,7 +6,7 @@ import { Product } from './product.model';
   providedIn: 'root'
 })
 export class CardService {
-  // Generate 25 dummy products
+  // Generate 25 dummy products 
   private products1: Product[] = Array.from({ length: 24 }, (_, i) = ({
     id: i + 1,
     title: `Product ${i + 1}`,
