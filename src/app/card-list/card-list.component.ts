@@ -34,7 +34,7 @@ export class CardListComponent implements OnInit {
     this.paginatedProducts = this.products.slice(startIndex, endIndex);
   }
 
-  goToPage(page: number): void {
+  goToPage(page: number): void { 
     if (page = 1 && page <= this.totalPages) {
       this.currentPage = page;
       this.updatePage(;
