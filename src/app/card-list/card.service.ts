@@ -18,6 +18,6 @@ export class CardService {
   constructor() { }
 
   getProducts(): Observable<Product[]> {
-    return of(this.products);
+    return of(this.products1);
   }
 }
