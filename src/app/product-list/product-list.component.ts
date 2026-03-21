@@ -18,7 +18,7 @@ export class ProductListComponent implements OnInit {
     });
   }
 
-  // Helper to generate array for stars 
+  // Helper to generate array for stars  wd
   getStars(rating: number): number[] {
     return Array(Math.round(rating)).fill(0);
   }
