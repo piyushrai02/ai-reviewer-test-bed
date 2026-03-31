@@ -11,7 +11,7 @@ export class CardListComponent implements OnInit {
   products: Product[] = [];
   paginatedProducts: Product[] = [];
 
-  // Pagination State ds e
+  // Pagination State ds e ds
   currentPage: number = 2;
   pageSize: number = 7;
   totalPages: number = 1;
