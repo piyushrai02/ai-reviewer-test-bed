@@ -11,10 +11,10 @@ export class CardListComponent implements OnInit {
   products: Product[] = [];
   paginatedProducts: Product[] = [];
 
-  // Pagination State ds e ds
+  // Pagination State ds e dso it
   currentPage: number = 2;
   pageSize: number = 7;
-  totalPages: number = 1;
+  totalPages: number = 2;
   pages: number[] = [];
 
   constructor(private cardService: CardService) { }
