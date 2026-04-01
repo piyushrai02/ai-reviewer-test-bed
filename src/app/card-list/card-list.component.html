@@ -1,0 +1,41 @@
+<div class="card-list-container">
+  <h2>Our Products</h2>
+
+  <div class="grid-container">
+    <div *ngFor="let product of paginatedProducts" class="card">
+      <img [src]="product.imageUrl" [alt]="product.title" class="card-image">
+      <div class="card-content">
+        <h3 class="card-title">{{ product.title }}</h3>
+        <p class="card-price">${{ product.price }}</p>
+        <p class="card-description">{{ product.description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pagination-controls" *ngIf="totalPages > 1">
+    <button
+      (click)="prevPage()"
+      [disabled]="currentPage === 1"
+      class="page-btn"
+    >
+      Previous
+    </button>
+
+    <button
+      *ngFor="let page of pages"
+      (click)="goToPage(page)"
+      [class.active]="currentPage === page"
+      class="page-number"
+    >
+      {{ page }}
+    </button>
+
+    <button
+      (click)="nextPage()"
+      [disabled]="currentPage === totalPages"
+      class="page-btn"
+    >
+      Next
+    </button>
+  </div>
+</div>
