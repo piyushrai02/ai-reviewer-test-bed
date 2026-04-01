@@ -13,7 +13,6 @@ export class GreetingComponent implements OnInit {
   userName: string = "Guest";
   initialUserName: string = "Guest"; // To store the initial state for reset
   showDetails: boolean = false;
-  showDetails: boolean = false;
 
   // @Input() Decorator: Allows data to be passed into this component from its parent check the PR
   @Input()
