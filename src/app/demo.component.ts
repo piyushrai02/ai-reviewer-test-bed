@@ -8,7 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
   styleUrls: ["./greeting.component.css"], // Links to component-specific CSS (optional)
 })
 export class GreetingComponent implements OnInit {
-  // Properties (data) that can be displayed or manipulated
+  // Properties (data) that can be displayed or manipulated help
   title: string = "Welcome to Mycwdqw Angular 1 wqq sawq check the code";
   userName: string = "Guest";
   initialUserName: string = "Guest"; // To store the initial state for reset
