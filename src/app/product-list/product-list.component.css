@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+.product-list-container {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #131921;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #febd69;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.results-info {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.product-card {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.image-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.image-container img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: normal;
+  color: #0F1111;
+  margin: 0;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.product-title:hover {
+  color: #c7511f;
+  cursor: pointer;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.stars {
+  color: #ffa41c;
+  margin-right: 5px;
+}
+
+.count {
+  color: #007185;
+}
+
+.price {
+  font-size: 21px;
+  color: #0F1111;
+}
+
+.currency {
+  font-size: 12px;
+  vertical-align: top;
+  margin-right: 2px;
+}
+
+.prime-delivery {
+  font-size: 12px;
+  color: #565959;
+  margin-bottom: 10px;
+}
+
+.prime-delivery span {
+  color: #007185;
+  font-weight: bold;
+}
+
+.add-to-cart-btn {
+  background-color: #ffd814;
+  border: 1px solid #fcd200;
+  border-radius: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 13px;
+  box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
+}
+
+.add-to-cart-btn:hover {
+  background-color: #f7ca00;
+  border-color: #f2c200;
+}
