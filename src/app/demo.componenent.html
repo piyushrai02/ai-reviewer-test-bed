@@ -1,0 +1,38 @@
+<div class="greeting-container">
+  <h2>{{ title }}</h2>
+
+  <p>Hello, <span class="user-name">{{ userName }}</span>!</p>
+
+  <div class="input-section">
+    <label for="nameInput">Enter your name usjkkh kher for customized ew for the others:</label>
+    <input
+      type="text"
+      id="nameInput"
+      [(ngModel)]="userName"
+      (input)="onNameChange()"
+      placeholder="Your Name 3"
+    >
+  </div>
+
+  <button (click)="resetName()">Reset Names For Userseweww</button>
+
+  <div *ngIf="userName.length > 0" class="message">
+    <p>Nice to meet you, {{ userName }}!</p>
+  </div>
+
+  <div *ngIf="showDetails">
+    <h3>More Details</h3>
+    <p>This is a demonstration of Angular data binding and event handling.</p>
+  </div>
+ <div *ngIf="!showDetails">
+    <h3>More Details</h3>
+    <p>This is a demonstration of Angular weweeqe binding and event handling.</p>
+  </div>
+  <button (click)="toggleDetails()">Toggle Details</button>
+
+</div>
+
+
+
+
+
